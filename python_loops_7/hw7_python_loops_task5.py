@@ -6,17 +6,17 @@ width = int(input("Введите ширину прямоугольника: "))
 print()
 
 # Внешний цикл по строкам
-for i in range(1, width+1):
+for i in range(1, height+1):
     # Внутренний цикл по столбцам
-    for j in range(1, height+1):
+    for j in range(1, width+1):
         print("*", end = "")
     print()
 
 
 # Второй вариант прямоугольника (только контуры)
-# for i in range(1, width+1):
-#     for j in range(1, height+1):
-#         if j > 1 and j < height and i > 1 and i < width:
+# for i in range(1, height+1):
+#     for j in range(1, width+1):
+#         if j > 1 and j < width and i > 1 and i < height:
 #             print(" ", end="")
 #         else:
 #             print("*", end="")

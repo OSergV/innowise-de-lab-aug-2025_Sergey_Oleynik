@@ -10,7 +10,7 @@ input_number = 0
 while input_number != secret_number:
     input_number = int(input("Введите число от 1 до 10: "))
 
-    if input_number > 1 and input_number < 10:
+    if input_number >= 1 and input_number <= 10:
         if input_number != secret_number:
             print("Неверно, попробуйте еще раз.")
     else:
